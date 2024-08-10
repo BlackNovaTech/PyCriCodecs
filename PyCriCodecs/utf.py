@@ -94,7 +94,7 @@ class UTF:
                 try:
                     strings_copy[i] = strings[i].decode("utf-8")
                 except:
-                    for x in ["shift-jis", "utf-16"]:
+                    for x in ["shift-jis", "utf-16", "gbk"]:
                         try:
                             strings_copy[i] = strings[i].decode(x)
                             self.encoding = x
